@@ -1,3 +1,5 @@
+//Declaring model for the user
+
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Users = sequelize.define('Users', {

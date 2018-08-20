@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 
 
+
 const generateJwtToken = (user) => {
     let expires = moment().utc().add({ days: 1 }).unix();
     let token = jwt.sign({

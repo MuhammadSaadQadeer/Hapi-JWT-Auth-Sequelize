@@ -9,8 +9,8 @@ module.exports = [
     {
         method: 'GET',
         path: '/',
-        handler: loginController.greetings,
-        config: {
+        handler: loginController.greetings,     //Specifying what controller to use
+        config: {                               //This will be used to display attributes in swagger ui
             description: 'Welcome Route',
             tags: ['api']
         }
@@ -23,7 +23,7 @@ module.exports = [
             description: 'Authenticate User',
             notes: 'Get jwt by providing email(jd@gmail.com) & password(test@123)',
             tags: ['api'],
-            auth: false,
+            auth: false,        //No auth for this end point
             plugins: {
                 'hapi-swagger': {
                     payloadType: 'form'
@@ -43,11 +43,11 @@ module.exports = [
         handler: userController.getAllUsers,
         config: {
             tags: ['api'],
-            auth: 'jwt',
+            auth: 'jwt',            //Specifiying the auth scheme , this is specified in server.js file
             description: 'Get All Users',
             validate: {
                 headers: Joi.object({
-                    'authorization': Joi.string().required()
+                    'authorization': Joi.string().required()    //Getting auth token in headers
                 }).options({ allowUnknown: true }),
             }
         }

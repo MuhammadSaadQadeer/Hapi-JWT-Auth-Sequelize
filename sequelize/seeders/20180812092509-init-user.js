@@ -1,3 +1,4 @@
+//Seeders are used to populate the db, built in feature of sequelize
 'use strict';
 
 module.exports = {
