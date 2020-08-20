@@ -21,7 +21,7 @@
   "author": "Muhammad Saad Qadeer",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.0",
+    "bcrypt": "^5.0.0",
     "hapi": "^17.5.3",
     "hapi-auth-jwt2": "^8.1.0",
     "hapi-swagger": "^9.1.1",
