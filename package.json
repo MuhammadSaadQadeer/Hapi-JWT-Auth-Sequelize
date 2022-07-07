@@ -27,7 +27,7 @@
     "hapi-swagger": "^9.1.1",
     "inert": "^5.1.0",
     "jsonwebtoken": "^8.3.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "mysql2": "^2.1.0",
     "nodemon": "^1.18.3",
     "pg": "^7.4.3",
